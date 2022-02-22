@@ -1,0 +1,49 @@
+O que é React?
+
+O React tem sido usado por grandes companhias ao redor do mundo. Algumas delas:
+ Netflix, Airbnb, American Express, Facebook, WhatsApp, eBay e Instagram.
+ Essa é a prova de que a ferramenta tem um número de vantagens que não têm nem comparação nos seus competidores.
+ Sendo uma biblioteca de código aberto para interfaces gráficas (GUI) que tem como foco uma só coisa: 
+tornar a experiência do usuário com a interface mais eficiente. Ela pode ser categorizada como o
+ “V” no padrão MVC (Model-View-Controller).   
+
+Como funciona React JS?
+
+Também conhecido como React JS, o componente do React é fácil de escrever porque ele usa JSX,
+ uma extensão de sintaxe opcional para JavaScript. Ela permite que você combine HTML com JavaScript.  
+O JSX é uma excelente combinação de JavaScript e HTML. Ela simplesmente simplifica toda a estrutura de 
+codificação escrita de um site. Além disso, a extensão também faz com que a renderização de múltiplas funções seja mais fácil.
+Ainda que o JSX não seja a extensão de sintaxe mais popular, ela tem provado ser bastante eficiente.
+ Especialmente quando falamos em desenvolver componentes especiais ou aplicações de alto rendimento.
+
+O que é Styled Component?
+
+Trata-se de uma biblioteca (lib) que nos permite escrever códigos CSS dentro do JavaScript.
+ Dessa maneira não precisamos mais ficar importando nossos arquivos .css em nossas páginas,
+ e se um dia precisarmos utilizar esse mesmo componente em outro projeto, uma das maneiras 
+seria basicamente copiar o arquivo .js.
+Com o styled-components também ganhamos de brinde compatibilidade de browsers.
+Também ganhamos a regra de CSS Modules, o Styled cria um hash nas classes CSS, 
+assim, cada componente conhece apenas o seu CSS, uma mudança em um componente será refletida somente nele.
+Além de inúmeras outras vantagens, como a possibilidade de utilizar media queries de forma similar à que
+ utilizamos com pré-processadores, sem contar que também é possível utilizar elementos aninhados, pseudo-elements,
+ inclusive estilizar as tags html e body.
+
+
+function MainTextImg(props) {
+    return(
+        <MainTextImgStyle>
+            <MainText>
+                <h4>{props.titulo}</h4>
+                <p>{props.texto}</p>
+            </MainText>
+
+            <MainImg>
+                <img src={props.img} alt=""/>
+            </MainImg>
+        </MainTextImgStyle>
+    )
+}
+export { MainTextImg };
+
+  
